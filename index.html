@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>智慧急診 AI 分流系統</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="p-4 md:p-8">
+
+    <header class="flex items-center mb-8 max-w-4xl mx-auto">
+        <div class="bg-blue-600 p-2 rounded-lg mr-3 shadow-lg shadow-blue-200">
+            <i class="fas fa-heartbeat text-white text-xl"></i>
+        </div>
+        <div>
+            <h1 class="font-bold text-lg text-slate-800 leading-none">智慧急診 AI 分流系統</h1>
+            <p class="text-xs text-slate-500 uppercase tracking-tight">Emergency AI Triage System</p>
+        </div>
+    </header>
+
+    <main id="landingPage" class="max-w-[900px] mx-auto">
+        <div class="bg-white main-card p-10 flex flex-col items-center">
+            <div class="flex flex-col items-center text-center mb-10">
+                <div class="bg-blue-600 p-4 rounded-2xl mb-6 shadow-lg shadow-blue-200">
+                    <i class="fas fa-magic text-white text-3xl"></i>
+                </div>
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">歡迎使用智慧急診 AI 分流系統</h2>
+                <p class="text-slate-400 max-w-md">本系統將透過動態問卷蒐集您的症狀資訊，提供初步評估建議。</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-10">
+                <div class="bg-purple-50 p-6 rounded-2xl text-center">
+                    <div class="text-purple-500 mb-3"><i class="fas fa-microchip text-2xl"></i></div>
+                    <h3 class="font-bold text-slate-800 mb-2">AI 智慧分析</h3>
+                    <p class="text-xs text-slate-500">提供精準建議</p>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl text-center">
+                    <div class="text-blue-500 mb-3"><i class="fas fa-clock text-2xl"></i></div>
+                    <h3 class="font-bold text-slate-800 mb-2">快速分流</h3>
+                    <p class="text-xs text-slate-500">加速就診流程</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-2xl text-center">
+                    <div class="text-green-500 mb-3"><i class="fas fa-shield-alt text-2xl"></i></div>
+                    <h3 class="font-bold text-slate-800 mb-2">資料保護</h3>
+                    <p class="text-xs text-slate-500">符合 FHIR 標準</p>
+                </div>
+            </div>
+
+            <button onclick="navigateToForm()" class="bg-blue-600 text-white px-16 py-4 rounded-xl font-bold shadow-lg shadow-blue-200 flex items-center hover:bg-blue-700 transition">
+                開始填寫問卷 <i class="fas fa-arrow-right ml-3"></i>
+            </button>
+        </div>
+    </main>
+
+    <div id="formSection" class="max-w-4xl mx-auto hidden">
+        <div id="patientSummary" class="hidden bg-white main-card p-4 mb-4 flex items-center justify-between border-l-4 border-blue-500">
+            <div class="flex items-center">
+                <div class="bg-blue-100 p-3 rounded-xl mr-4"><i class="fas fa-user text-blue-600"></i></div>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <span id="summaryName" class="font-bold text-slate-800">---</span>
+                        <span class="text-slate-300">|</span>
+                        <span id="summaryInfo" class="text-sm text-slate-500">-- 歲</span>
+                    </div>
+                    <p class="text-xs text-slate-400 font-mono">FHIR ID: <span id="summaryFHIRId" class="text-blue-500">載入中...</span></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="stepper" class="hidden bg-white main-card p-6 mb-6">
+            <div class="flex items-center justify-between px-4">
+                <div class="flex flex-col items-center flex-1">
+                    <div id="step-1-circle" class="step-circle step-active mb-2">1</div>
+                    <span class="text-xs font-bold text-blue-600">主要症狀</span>
+                </div>
+                <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+                <div class="flex flex-col items-center flex-1">
+                    <div id="step-2-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">2</div>
+                    <span class="text-xs text-slate-400">症狀細部</span>
+                </div>
+                <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+                <div class="flex flex-col items-center flex-1">
+                    <div id="step-3-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">3</div>
+                    <span class="text-xs text-slate-400">既往病史</span>
+                </div>
+                <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+                <div class="flex flex-col items-center flex-1">
+                    <div id="step-4-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">4</div>
+                    <span class="text-xs text-slate-400">過敏史</span>
+                </div>
+                <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+                <div class="flex flex-col items-center flex-1">
+                    <div id="step-5-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">5</div>
+                    <span class="text-xs text-slate-400">AI 分析</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="symptomStep1" class="bg-white main-card p-8">
+            <h3 class="text-xl font-bold mb-6">請選擇主要症狀</h3>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <button onclick="selectSymptom(this, 'chest')" class="symptom-card p-6 rounded-2xl border-2 flex flex-col items-center space-y-3">
+                    <i class="fas fa-heart text-red-500 text-xl"></i>
+                    <span class="font-bold">胸痛</span>
+                </button>
+                <button onclick="selectSymptom(this, 'abdomen')" class="symptom-card p-6 rounded-2xl border-2 flex flex-col items-center space-y-3">
+                    <i class="fas fa-stomach text-orange-500 text-xl"></i>
+                    <span class="font-bold">腹痛</span>
+                </button>
+            </div>
+            <div class="flex justify-end mt-8 pt-6 border-t">
+                <button onclick="goToStep2()" id="toStep2Btn" disabled class="bg-slate-200 text-slate-400 px-12 py-3 rounded-xl font-bold">下一步</button>
+            </div>
+        </div>
+
+        <div id="symptomStep2" class="hidden">... (Step 2 內容) ...</div>
+        <div id="symptomStep3" class="hidden">... (Step 3 內容) ...</div>
+        <div id="symptomStep4" class="hidden">... (Step 4 內容) ...</div>
+        <div id="resultSection" class="hidden">... (AI 結果頁) ...</div>
+    </div>
+
+    <footer class="mt-8 pb-10 text-center text-slate-400 text-xs">
+        © 2025 智慧急診 AI 分流系統 · 僅供臨床決策輔助使用
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
