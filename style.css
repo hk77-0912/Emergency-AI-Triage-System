@@ -1,0 +1,45 @@
+/* style.css */
+body { 
+    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); 
+    min-height: 100vh; 
+    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+}
+
+.main-card { 
+    background: white;
+    border-radius: 20px; 
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
+}
+
+.symptom-card { 
+    transition: all 0.3s ease; 
+    border-color: #f1f5f9;
+}
+
+.symptom-card.selected { 
+    border-color: #3b82f6; 
+    background-color: #eff6ff; 
+}
+
+.chip.active { 
+    background-color: #3b82f6; 
+    color: white; 
+    border-color: #3b82f6; 
+}
+
+.step-circle { 
+    width: 32px; height: 32px; 
+    display: flex; align-items: center; justify-content: center; 
+    border-radius: 50%; font-weight: bold; font-size: 14px; 
+    transition: 0.3s; 
+}
+
+.step-done { background-color: #22c55e !important; color: white !important; }
+.step-active { background-color: #1e40af !important; color: white !important; box-shadow: 0 0 0 4px #dbeafe; }
+
+.severity-slider {
+    -webkit-appearance: none;
+    width: 100%; height: 12px;
+    border-radius: 6px;
+    background: linear-gradient(to right, #22c55e 0%, #eab308 50%, #ef4444 100%);
+}
