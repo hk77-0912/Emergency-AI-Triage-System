@@ -3,51 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>智慧急診 AI 分流系統</title>
+    <title>智慧急診 AI 分流系統 </title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">    
+<link rel="stylesheet" href="style.css">
 </head>
 <body class="p-4 md:p-8">
 
-    <header class="flex items-center mb-8 max-w-4xl mx-auto">
-        <div class="bg-blue-600 p-2 rounded-lg mr-3 shadow-lg shadow-blue-200">
-            <i class="fas fa-heartbeat text-white text-xl"></i>
-        </div>
-        <div>
-            <h1 class="font-bold text-lg text-slate-800 leading-none">智慧急診 AI 分流系統</h1>
-            <p class="text-xs text-slate-500 uppercase tracking-tight">Emergency AI Triage System</p>
-        </div>
-    </header>
+<header class="flex items-center mb-8 max-w-4xl mx-auto">
+    <div class="bg-blue-600 p-2 rounded-lg mr-3 shadow-lg shadow-blue-200">
+        <i class="fas fa-heartbeat text-white text-xl"></i>
+    </div>
+    <div>
+        <h1 class="font-bold text-lg text-slate-800 leading-none">智慧急診 AI 分流系統</h1>
+        <p class="text-xs text-slate-500 uppercase tracking-tight">Emergency AI Triage System</p>
+    </div>
+</header>
 
     <main id="landingPage" class="max-w-[900px] mx-auto">
         <div class="bg-white main-card p-10 flex flex-col items-center">
             <div class="flex flex-col items-center text-center mb-10">
                 <div class="bg-blue-600 p-4 rounded-2xl mb-6 shadow-lg shadow-blue-200">
-                    <i class="fas fa-magic text-white text-3xl"></i>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12,2L14.41,8.04L20.5,9.25L15.83,13.25L17.2,19.22L12,16L6.8,19.22L8.17,13.25L3.5,9.25L9.59,8.04L12,2M12,5.2L10.38,10.61L4.97,11.69L8.86,15.04L7.8,20.4L12,17.8L16.2,20.4L15.14,15.04L19.03,11.69L13.62,10.61L12,5.2Z" opacity=".3"/>
+                        <path d="M19,2L20.3,5.7L24,7L20.3,8.3L19,12L17.7,8.3L14,7L17.7,5.7L19,2M7,4L8.5,8.5L13,10L8.5,11.5L7,16L5.5,11.5L1,10L5.5,8.5L7,4Z" />
+                    </svg>
                 </div>
                 <h2 class="text-2xl md:text-3xl font-bold text-slate-800 mb-4">歡迎使用智慧急診 AI 分流系統</h2>
                 <p class="text-slate-400 max-w-md">本系統將透過動態問卷蒐集您的症狀資訊，提供初步評估建議。</p>
             </div>
-            
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-10">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 w-full mb-10">
                 <div class="bg-purple-50 p-6 rounded-2xl text-center">
                     <div class="text-purple-500 mb-3"><i class="fas fa-microchip text-2xl"></i></div>
                     <h3 class="font-bold text-slate-800 mb-2">AI 智慧分析</h3>
-                    <p class="text-xs text-slate-500">提供精準建議</p>
+                    <p class="text-xs text-slate-500">根據您的病徵數據模型，提供精準建議</p>
                 </div>
                 <div class="bg-blue-50 p-6 rounded-2xl text-center">
                     <div class="text-blue-500 mb-3"><i class="fas fa-clock text-2xl"></i></div>
                     <h3 class="font-bold text-slate-800 mb-2">快速分流</h3>
-                    <p class="text-xs text-slate-500">加速就診流程</p>
+                    <p class="text-xs text-slate-500">約 3-5 分鐘完成問卷，加速就診流程</p>
                 </div>
                 <div class="bg-green-50 p-6 rounded-2xl text-center">
                     <div class="text-green-500 mb-3"><i class="fas fa-shield-alt text-2xl"></i></div>
                     <h3 class="font-bold text-slate-800 mb-2">資料保護</h3>
-                    <p class="text-xs text-slate-500">符合 FHIR 標準</p>
+                    <p class="text-xs text-slate-500">符合醫療隱私標準，資料安全有保障</p>
                 </div>
             </div>
 
+            <div class="bg-yellow-50 border border-yellow-100 p-5 rounded-2xl w-full mb-10 flex items-start">
+                <i class="fas fa-exclamation-triangle text-orange-400 mt-1 mr-4"></i>
+                <div class="text-xs text-yellow-800 space-y-1">
+                    <p class="font-bold text-sm mb-1">重要提醒</p>
+                    <ul class="list-disc list-inside space-y-1">
+                        <li>本系統提供之建議僅供臨床決策輔助參考，不能取代專業醫師的診斷。</li>
+                        <li>最終診斷與治療決策仍由急診醫師進行。</li>
+                        <li>若有生命危急徵象（如嚴重胸痛、呼吸困難），請立即告知醫護人員。</li>
+                    </ul>
+                </div>
+            </div>
+            
             <button onclick="navigateToForm()" class="bg-blue-600 text-white px-16 py-4 rounded-xl font-bold shadow-lg shadow-blue-200 flex items-center hover:bg-blue-700 transition">
                 開始填寫問卷 <i class="fas fa-arrow-right ml-3"></i>
             </button>
@@ -55,40 +69,100 @@
     </main>
 
     <div id="formSection" class="max-w-4xl mx-auto hidden">
+        <div id="formCardWrapper" class="collapse-transition">
+            <div class="bg-white main-card p-8 mb-6">
+                <div class="flex items-center mb-8">
+                    <div class="bg-blue-500 p-3 rounded-xl mr-4 shadow-lg shadow-blue-200">
+                        <i class="fas fa-user-injured text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <h2 class="text-xl font-bold text-slate-800">病患基本資料</h2>
+                        <p class="text-sm text-slate-400 font-medium">Patient Information</p>
+                    </div>
+                </div>
+
+                <form id="fhirForm" class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">姓名 <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" required placeholder="請輸入姓名" class="w-full p-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">性別 <span class="text-red-500">*</span></label>
+                            <div class="flex space-x-2">
+                                <button type="button" onclick="setGender('male')" id="btn-male" class="segmented-btn flex-1 py-3 border border-slate-200 rounded-lg text-slate-600">男</button>
+                                <button type="button" onclick="setGender('female')" id="btn-female" class="segmented-btn flex-1 py-3 border border-slate-200 rounded-lg text-slate-600">女</button>
+                                <button type="button" onclick="setGender('other')" id="btn-other" class="segmented-btn flex-1 py-3 border border-slate-200 rounded-lg text-slate-600">其他</button>
+                            </div>
+                            <input type="hidden" id="gender" required>
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">醫療識別碼 / 身分證 <span class="text-red-500">*</span></label>
+                            <input type="text" id="patientId" required placeholder="例如：A123456789" class="w-full p-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-bold text-slate-700 mb-2">出生年月日 <span class="text-red-500">*</span></label>
+                            <input type="date" id="birthDate" required class="w-full p-3 border border-slate-200 rounded-lg focus:ring-2 focus:ring-blue-400 outline-none">
+                        </div>
+                    </div>
+                    
+                    <div class="bg-blue-50 p-4 rounded-xl border border-blue-100 mt-8">
+                        <p class="text-sm text-blue-700">
+                            <i class="fas fa-shield-alt mr-2"></i>
+                            <strong>隱私保護說明：</strong> 您的個人資料將依據個資法及醫療法規妥善保管。採用標準 <strong>FHIR Patient Resource</strong> 格式儲存。
+                        </p>
+                     </div>
+                    
+                     <div class="flex justify-center mt-8 space-x-4">
+                        <button type="button" onclick="backToLanding()" class="px-8 py-3 rounded-xl font-bold text-slate-400">返回</button>
+                        <button type="submit" class="bg-blue-600 text-white px-12 py-3 rounded-xl font-bold hover:bg-blue-700 shadow-lg shadow-blue-200 flex items-center transition">
+                            完成並進入問卷(資料傳送至FHIR) <i class="fas fa-arrow-right ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
         <div id="patientSummary" class="hidden bg-white main-card p-4 mb-4 flex items-center justify-between border-l-4 border-blue-500">
             <div class="flex items-center">
-                <div class="bg-blue-100 p-3 rounded-xl mr-4"><i class="fas fa-user text-blue-600"></i></div>
+                <div class="bg-blue-100 p-3 rounded-xl mr-4"><i class="fas fa-user text-blue-600"></i>
+                </div>
                 <div>
                     <div class="flex items-center space-x-2">
                         <span id="summaryName" class="font-bold text-slate-800">---</span>
                         <span class="text-slate-300">|</span>
-                        <span id="summaryInfo" class="text-sm text-slate-500">-- 歲</span>
+                        <span id="summaryInfo" class="text-sm text-slate-500">-- 歲 · --</span>
                     </div>
-                    <p class="text-xs text-slate-400 font-mono">FHIR ID: <span id="summaryFHIRId" class="text-blue-500">載入中...</span></p>
+                    <p class="text-xs text-slate-400 font-mono mt-1">FHIR Patient ID: <span id="summaryFHIRId" class="text-blue-500">載入中...</span></p>
                 </div>
             </div>
+            <i class="fas fa-chevron-down text-slate-300"></i>
         </div>
 
         <div id="stepper" class="hidden bg-white main-card p-6 mb-6">
             <div class="flex items-center justify-between px-4">
                 <div class="flex flex-col items-center flex-1">
-                    <div id="step-1-circle" class="step-circle step-active mb-2">1</div>
-                    <span class="text-xs font-bold text-blue-600">主要症狀</span>
+                    <div id="step-1-circle" class="step-circle bg-blue-600 text-white mb-2">1</div>
+                    <span id="step-1-label" class="text-xs font-bold text-blue-600">主要症狀</span>
                 </div>
                 <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
                 <div class="flex flex-col items-center flex-1">
                     <div id="step-2-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">2</div>
-                    <span class="text-xs text-slate-400">症狀細部</span>
+                    <span id="step-2-label" class="text-xs text-slate-400">症狀細部</span>
                 </div>
                 <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
                 <div class="flex flex-col items-center flex-1">
                     <div id="step-3-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">3</div>
                     <span class="text-xs text-slate-400">既往病史</span>
                 </div>
+
                 <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
                 <div class="flex flex-col items-center flex-1">
                     <div id="step-4-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">4</div>
-                    <span class="text-xs text-slate-400">過敏史</span>
+                    <span class="text-xs text-slate-400">用藥與過敏史</span>
                 </div>
                 <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
                 <div class="flex flex-col items-center flex-1">
@@ -98,32 +172,672 @@
             </div>
         </div>
 
-        <div id="symptomStep1" class="bg-white main-card p-8">
-            <h3 class="text-xl font-bold mb-6">請選擇主要症狀</h3>
-            <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
-                <button onclick="selectSymptom(this, 'chest')" class="symptom-card p-6 rounded-2xl border-2 flex flex-col items-center space-y-3">
-                    <i class="fas fa-heart text-red-500 text-xl"></i>
-                    <span class="font-bold">胸痛</span>
-                </button>
-                <button onclick="selectSymptom(this, 'abdomen')" class="symptom-card p-6 rounded-2xl border-2 flex flex-col items-center space-y-3">
-                    <i class="fas fa-stomach text-orange-500 text-xl"></i>
-                    <span class="font-bold">腹痛</span>
-                </button>
+<div id="stepper" class="hidden bg-white main-card p-6 mb-6">
+    <div class="flex items-center justify-between px-4">
+        <div class="flex flex-col items-center flex-1">
+            <div id="step-1-circle" class="step-circle bg-blue-600 text-white mb-2">1</div>
+            <span id="step-1-label" class="text-xs font-bold text-blue-600">主要症狀</span>
+        </div>
+        <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+        <div class="flex flex-col items-center flex-1">
+            <div id="step-2-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">2</div>
+            <span id="step-2-label" class="text-xs text-slate-400">症狀細部</span>
+        </div>
+        <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+        <div class="flex flex-col items-center flex-1">
+            <div id="step-3-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">3</div>
+            <span id="step-3-circle-label" class="text-xs text-slate-400">既往病史</span>
+        </div>
+        <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+        <div class="flex flex-col items-center flex-1">
+            <div id="step-4-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">4</div>
+            <span id="step-4-circle-label" class="text-xs text-slate-400">用藥過敏</span>
+        </div>
+        <div class="h-0.5 bg-slate-100 flex-1 -mt-6"></div>
+        <div class="flex flex-col items-center flex-1">
+            <div id="step-5-circle" class="step-circle bg-slate-100 text-slate-400 mb-2">5</div>
+            <span id="step-5-circle-label" class="text-xs text-slate-400">AI 分析</span>
+        </div>
+    </div>
+</div>
+
+<div id="symptomStep1" class="hidden bg-white main-card p-8 mb-20">
+    <div class="mb-8">
+        <h3 class="text-xl font-bold text-slate-800">請選擇您的主要症狀</h3>
+        <p class="text-sm text-slate-400">請選擇目前最困擾您的問題</p>
+    </div>
+    
+    <div class="grid grid-cols-2 md:grid-cols-3 gap-4 mb-8">
+        <button onclick="selectSymptom(this, 'chest')" class="symptom-card p-6 rounded-2xl bg-white border-2 border-slate-50 flex flex-col items-center space-y-3 transition-all">
+            <div class="p-3 bg-red-50 rounded-full text-red-500"><i class="fas fa-heart text-xl"></i></div>
+            <span class="font-bold text-slate-700">胸痛</span>
+        </button>
+
+        <button onclick="selectSymptom(this, 'abdomen')" class="symptom-card p-6 rounded-2xl bg-white border-2 border-slate-50 flex flex-col items-center space-y-3 transition-all">
+            <div class="p-3 bg-orange-50 rounded-full text-orange-500"><i class="fas fa-tint text-xl"></i></div>
+            <span class="font-bold text-slate-700">腹痛</span>
+        </button>
+
+        <button onclick="selectSymptom(this, 'headache')" class="symptom-card p-6 rounded-2xl bg-white border-2 border-slate-50 flex flex-col items-center space-y-3 transition-all">
+            <div class="p-3 bg-purple-50 rounded-full text-purple-500"><i class="fas fa-brain text-xl"></i></div>
+            <span class="font-bold text-slate-700">頭痛</span>
+        </button>
+
+        <button onclick="selectSymptom(this, 'dizzy')" class="symptom-card p-6 rounded-2xl bg-white border-2 border-slate-50 flex flex-col items-center space-y-3 transition-all">
+            <div class="p-3 bg-blue-50 rounded-full text-blue-500"><i class="fas fa-bullseye text-xl"></i></div>
+            <span class="font-bold text-slate-700">頭暈</span>
+        </button>
+
+        <button onclick="selectSymptom(this, 'breath')" class="symptom-card p-6 rounded-2xl bg-white border-2 border-slate-50 flex flex-col items-center space-y-3 transition-all">
+            <div class="p-3 bg-teal-50 rounded-full text-teal-500"><i class="fas fa-wind text-xl"></i></div>
+            <span class="font-bold text-slate-700">呼吸困難</span>
+        </button>
+
+        <button onclick="selectSymptom(this, 'fever')" class="symptom-card p-6 rounded-2xl bg-white border-2 border-slate-50 flex flex-col items-center space-y-3 transition-all">
+            <div class="p-3 bg-yellow-50 rounded-full text-yellow-500"><i class="fas fa-thermometer-half text-xl"></i></div>
+            <span class="font-bold text-slate-700">發燒</span>
+        </button>
+    </div>
+
+    <div class="flex justify-center">
+        <button id="toStep2Btn" onclick="goToStep2()" disabled class="px-12 py-4 rounded-xl font-bold bg-slate-200 text-slate-400 cursor-not-allowed transition-all">
+            下一步：症狀細節
+        </button>
+    </div>
+</div>
+
+<div id="symptomStep2" class="hidden space-y-6 mb-20">
+    <div class="bg-white main-card p-8">
+        <div class="mb-8">
+            <h3 class="text-xl font-bold text-slate-800">症狀詳細資訊</h3>
+            <p class="text-sm text-slate-400">請詳細描述您的症狀，以協助進行初步評估</p>
+        </div>
+
+        <div class="space-y-8">
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-4">症狀開始時間 (Onset Time)</label>
+                <input type="hidden" id="onsetTime" value="未選擇">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+                    <button type="button" onclick="setSegmented(this, 'onset'); document.getElementById('onsetTime').value='30分鐘內'" class="segmented-btn p-3 border border-slate-200 rounded-xl text-sm">30分鐘內</button>
+                    <button type="button" onclick="setSegmented(this, 'onset'); document.getElementById('onsetTime').value='1-3小時'" class="segmented-btn p-3 border border-slate-200 rounded-xl text-sm">1-3小時</button>
+                    <button type="button" onclick="setSegmented(this, 'onset'); document.getElementById('onsetTime').value='3-24小時'" class="segmented-btn p-3 border border-slate-200 rounded-xl text-sm">3-24小時</button>
+                    <button type="button" onclick="setSegmented(this, 'onset'); document.getElementById('onsetTime').value='超過24小時'" class="segmented-btn p-3 border border-slate-200 rounded-xl text-sm">超過24小時</button>
+                </div>
             </div>
-            <div class="flex justify-end mt-8 pt-6 border-t">
-                <button onclick="goToStep2()" id="toStep2Btn" disabled class="bg-slate-200 text-slate-400 px-12 py-3 rounded-xl font-bold">下一步</button>
+
+            <div>
+                <label class="block text-sm font-bold text-slate-700 mb-4">症狀性質 (Nature)</label>
+                <div class="flex flex-wrap gap-2">
+                    <div onclick="toggleChip(this)" class="chip px-5 py-2 border border-slate-200 rounded-full text-sm font-medium cursor-pointer">悶痛</div>
+                    <div onclick="toggleChip(this)" class="chip px-5 py-2 border border-slate-200 rounded-full text-sm font-medium cursor-pointer">刺痛</div>
+                    <div onclick="toggleChip(this)" class="chip px-5 py-2 border border-slate-200 rounded-full text-sm font-medium cursor-pointer">抽痛/陣發性</div>
+                    <div onclick="toggleChip(this)" class="chip px-5 py-2 border border-slate-200 rounded-full text-sm font-medium cursor-pointer">持續性</div>
+                    <div onclick="toggleChip(this)" class="chip px-5 py-2 border border-slate-200 rounded-full text-sm font-medium cursor-pointer">陣痛</div>
+                    <div onclick="toggleChip(this)" class="chip px-5 py-2 border border-slate-200 rounded-full text-sm font-medium cursor-pointer">壓迫性</div>
+                </div>
+            </div>
+
+            <div>
+                <div class="flex justify-between items-center mb-4">
+                    <label class="text-sm font-bold text-slate-700">疼痛/不適嚴重程度 (Severity)</label>
+                    <span class="bg-slate-800 text-white px-3 py-1 rounded-lg text-sm font-bold" id="severityValue">5 分</span>
+                </div>
+                <input type="range" min="0" max="10" value="5" class="severity-slider" id="severityRange" oninput="updateSeverity(this.value)">
+                <div class="flex justify-between mt-2 text-xs text-slate-400 font-bold">
+                    <span>微弱 (0)</span>
+                    <span>中等 (5)</span>
+                    <span>劇烈 (10)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="block-chest" class="hidden bg-red-50 border border-red-100 rounded-[20px] p-8 animate-in fade-in duration-500">
+    <h4 class="text-red-700 font-bold mb-4 flex items-center">
+        <span class="w-2 h-2 bg-red-500 rounded-full mr-2"></span> 
+        胸痛專屬評估 (Chest Pain Evaluation)
+    </h4>
+    
+    <div class="space-y-6">
+        <div>
+            <span class="block text-sm font-bold text-red-800 mb-3">1. 疼痛發生情況：</span>
+            <div class="flex gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'onset')" class="chip bg-white border border-red-100 px-4 py-2 rounded-lg text-sm text-slate-600">突然發生</button>
+                <button type="button" onclick="toggleSingleChip(this, 'onset')" class="chip bg-white border border-red-100 px-4 py-2 rounded-lg text-sm text-slate-600">逐漸出現</button>
             </div>
         </div>
 
-        <div id="symptomStep2" class="hidden">... (Step 2 內容) ...</div>
-        <div id="symptomStep3" class="hidden">... (Step 3 內容) ...</div>
-        <div id="symptomStep4" class="hidden">... (Step 4 內容) ...</div>
-        <div id="resultSection" class="hidden">... (AI 結果頁) ...</div>
+        <div>
+            <span class="block text-sm font-bold text-red-800 mb-3">2. 疼痛位置與性質 (可多選)：</span>
+            <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-1.5 rounded-lg text-xs">胸口中央</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-1.5 rounded-lg text-xs">左側胸痛</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-1.5 rounded-lg text-xs">放射至左臂/下顎</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-1.5 rounded-lg text-xs">放射至背部</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-red-100 border border-red-200 px-3 py-1.5 rounded-lg text-xs font-bold text-red-700">壓迫感/緊縮感</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-red-100 border border-red-200 px-3 py-1.5 rounded-lg text-xs font-bold text-red-700">撕裂感</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-1.5 rounded-lg text-xs">刺痛/灼熱</button>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <span class="block text-sm font-bold text-red-800">3. 加劇因素與病史：</span>
+            <label class="flex items-center justify-between p-4 bg-white rounded-xl cursor-pointer border border-red-50">
+                <span class="text-slate-700 text-sm font-medium">疼痛因活動、情緒或呼吸加劇？</span>
+                <input type="checkbox" class="w-5 h-5 accent-red-500">
+            </label>
+            <label class="flex items-center justify-between p-4 bg-white rounded-xl cursor-pointer border border-red-50">
+                <span class="text-slate-700 text-sm font-medium">近期有外傷或劇烈運動？</span>
+                <input type="checkbox" class="w-5 h-5 accent-red-500">
+            </label>
+            <label class="flex items-center justify-between p-4 bg-white rounded-xl cursor-pointer border border-red-50">
+                <span class="text-slate-700 text-sm font-medium">近期有感染(發燒/咳嗽)？</span>
+                <input type="checkbox" class="w-5 h-5 accent-red-500">
+            </label>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-red-800 mb-3 italic">⚠️ 是否伴隨以下情況？</span>
+            <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-orange-50 border border-orange-200 px-4 py-2 rounded-lg text-sm text-orange-700 font-bold">呼吸困難</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-orange-50 border border-orange-200 px-4 py-2 rounded-lg text-sm text-orange-700 font-bold">冒冷汗</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-orange-50 border border-orange-200 px-4 py-2 rounded-lg text-sm text-orange-700 font-bold">噁心嘔吐</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-orange-50 border border-orange-200 px-4 py-2 rounded-lg text-sm text-orange-700 font-bold">頭暈或昏厥</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block-abdomen" class="hidden bg-orange-50 border border-orange-100 rounded-[20px] p-8 animate-in fade-in duration-500">
+    <h4 class="text-orange-700 font-bold mb-4 flex items-center">
+        <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span> 
+        腹痛專屬評估 (Abdominal Pain Evaluation)
+    </h4>
+    
+    <div class="space-y-6">
+        <div>
+            <span class="block text-sm font-bold text-orange-800 mb-3">1. 疼痛發生情況：</span>
+            <div class="flex gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'abdomen-onset')" class="chip bg-white border border-orange-200 px-4 py-2 rounded-lg text-sm text-slate-600">突然發生</button>
+                <button type="button" onclick="toggleSingleChip(this, 'abdomen-onset')" class="chip bg-white border border-orange-200 px-4 py-2 rounded-lg text-sm text-slate-600">逐漸加重</button>
+            </div>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-orange-800 mb-3">2. 疼痛位置 (最明顯處)：</span>
+            <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'location')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">右上腹 / 左上腹</button>
+                <button type="button" onclick="toggleSingleChip(this, 'location')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">右下腹 / 左下腹</button>
+                <button type="button" onclick="toggleSingleChip(this, 'location')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">上腹部 / 下腹部</button>
+                <button type="button" onclick="toggleSingleChip(this, 'location')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">全腹部疼痛</button>
+            </div>
+            <label class="flex items-center justify-between p-3 bg-white rounded-xl cursor-pointer border border-orange-100 mt-3">
+                <span class="text-slate-700 text-xs font-medium">疼痛位置是否會移動？(如: 肚臍 → 右下腹)</span>
+                <input type="checkbox" class="w-4 h-4 accent-orange-500">
+            </label>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-orange-800 mb-3">3. 疼痛與進食關係：</span>
+            <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'meal')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">進食前痛</button>
+                <button type="button" onclick="toggleSingleChip(this, 'meal')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">進食後痛</button>
+                <button type="button" onclick="toggleSingleChip(this, 'meal')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">空腹時痛</button>
+                <button type="button" onclick="toggleSingleChip(this, 'meal')" class="chip bg-white border border-orange-100 px-3 py-2 rounded-lg text-xs">與進食無關</button>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <span class="block text-sm font-bold text-orange-800">4. 伴隨症狀與紀錄：</span>
+            <div class="flex flex-wrap gap-2 mb-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-orange-200 px-3 py-1.5 rounded-lg text-xs">發燒</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-orange-200 px-3 py-1.5 rounded-lg text-xs">噁心/嘔吐</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-orange-200 px-3 py-1.5 rounded-lg text-xs">腹瀉/便秘</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-red-50 border border-red-200 text-red-600 px-3 py-1.5 rounded-lg text-xs font-bold">血便/黑便</button>
+            </div>
+            <label class="flex items-center justify-between p-4 bg-white rounded-xl cursor-pointer border border-orange-50">
+                <span class="text-slate-700 text-sm font-medium">最近有外傷、感染或飲酒？</span>
+                <input type="checkbox" class="w-5 h-5 accent-orange-500">
+            </label>
+        </div>
+
+        <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
+            <span class="block text-xs font-bold text-red-600 mb-3 uppercase tracking-wider">🚨 警示症狀 (請務必勾選)</span>
+            <div class="space-y-2">
+                <label class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 accent-red-600">
+                    <span class="text-sm text-slate-700 font-bold">無法進食或喝水 / 持續嘔吐</span>
+                </label>
+                <label class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 accent-red-600">
+                    <span class="text-sm text-slate-700 font-bold">腹部肌肉僵硬、壓痛明顯</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block-headache" class="hidden bg-purple-50 border border-purple-100 rounded-[20px] p-8 animate-in fade-in duration-500">
+    <h4 class="text-purple-700 font-bold mb-4 flex items-center">
+        <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span> 
+        頭痛專屬評估 (Headache Evaluation)
+    </h4>
+    
+    <div class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <span class="block text-sm font-bold text-purple-800 mb-3">1. 發生速度：</span>
+                <div class="flex gap-2">
+                    <button type="button" onclick="toggleSingleChip(this, 'hd-onset')" class="chip bg-white border border-purple-200 px-4 py-2 rounded-lg text-sm">突然發生</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'hd-onset')" class="chip bg-white border border-purple-200 px-4 py-2 rounded-lg text-sm">緩慢加重</button>
+                </div>
+            </div>
+            <div>
+                <span class="block text-sm font-bold text-purple-800 mb-3">2. 發生頻率：</span>
+                <div class="flex gap-2">
+                    <button type="button" onclick="toggleSingleChip(this, 'hd-freq')" class="chip bg-white border border-purple-200 px-4 py-2 rounded-lg text-sm">初次發生</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'hd-freq')" class="chip bg-white border border-purple-200 px-4 py-2 rounded-lg text-sm">以前常發生</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-purple-800 mb-3">3. 疼痛主要位置與擴散：</span>
+            <div class="flex flex-wrap gap-2 mb-3">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">前額</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">太陽穴</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">後腦</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">單側</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">雙側</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">整個頭部</button>
+            </div>
+            <label class="flex items-center justify-between p-3 bg-white rounded-xl cursor-pointer border border-purple-100">
+                <span class="text-slate-700 text-xs font-medium">疼痛位置是否會改變或擴散？</span>
+                <input type="checkbox" class="w-4 h-4 accent-purple-500">
+            </label>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <span class="block text-sm font-bold text-purple-800 mb-3">4. 疼痛性質：</span>
+                <div class="flex flex-wrap gap-2">
+                    <button type="button" onclick="toggleSingleChip(this, 'nature')" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">悶痛</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'nature')" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">抽痛</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'nature')" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">刺痛</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'nature')" class="chip bg-white border border-purple-100 px-3 py-2 rounded-lg text-xs">壓迫感</button>
+                </div>
+            </div>
+            <div>
+                <span class="block text-sm font-bold text-purple-800 mb-3">5. 疼痛模式：</span>
+                <div class="flex gap-2">
+                    <button type="button" onclick="toggleSingleChip(this, 'pattern')" class="chip bg-white border border-purple-100 px-4 py-2 rounded-lg text-sm">持續性</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'pattern')" class="chip bg-white border border-purple-100 px-4 py-2 rounded-lg text-sm">一陣一陣</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-purple-800 mb-3">6. 哪些情況會加重頭痛？</span>
+            <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-1.5 rounded-lg text-xs">活動/走動</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-1.5 rounded-lg text-xs">咳嗽/用力/彎腰</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-1.5 rounded-lg text-xs">光線/聲音</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-1.5 rounded-lg text-xs">情緒緊張/壓力</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-purple-100 px-3 py-1.5 rounded-lg text-xs">睡眠不足</button>
+            </div>
+        </div>
+
+        <div class="bg-indigo-50 p-4 rounded-2xl border border-indigo-100">
+            <span class="block text-xs font-bold text-indigo-600 mb-3 uppercase tracking-wider italic">⚠️ 伴隨症狀 (若有神經學症狀請務必勾選)</span>
+            <div class="grid grid-cols-2 gap-2 mb-3">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-indigo-100 px-3 py-1.5 rounded-lg text-xs">噁心/嘔吐</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-indigo-100 px-3 py-1.5 rounded-lg text-xs">發燒</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-indigo-100 px-3 py-1.5 rounded-lg text-xs">畏光/怕吵</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-indigo-100 px-3 py-1.5 rounded-lg text-xs">頸部僵硬</button>
+            </div>
+            <div class="space-y-2 pt-2 border-t border-indigo-100">
+                <label class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 accent-red-600">
+                    <span class="text-sm text-red-700 font-bold">意識不清 / 頭暈 / 視力模糊</span>
+                </label>
+                <label class="flex items-center gap-3">
+                    <input type="checkbox" class="w-4 h-4 accent-red-600">
+                    <span class="text-sm text-red-700 font-bold">手腳無力 / 麻木 / 說話困難</span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block-dizzy" class="hidden bg-blue-50 border border-blue-100 rounded-[20px] p-8 animate-in fade-in duration-500">
+    <h4 class="text-blue-700 font-bold mb-4 flex items-center">
+        <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> 
+        頭暈專屬評估 (Dizziness Evaluation)
+    </h4>
+    
+    <div class="space-y-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+                <span class="block text-sm font-bold text-blue-800 mb-3">1. 發生情況：</span>
+                <div class="flex gap-2">
+                    <button type="button" onclick="toggleSingleChip(this, 'dz-onset')" class="chip bg-white border border-blue-200 px-4 py-2 rounded-lg text-sm">突然發生</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'dz-onset')" class="chip bg-white border border-blue-200 px-4 py-2 rounded-lg text-sm">逐漸出現</button>
+                </div>
+            </div>
+            <div>
+                <span class="block text-sm font-bold text-blue-800 mb-3">2. 持續時間：</span>
+                <div class="flex gap-2">
+                    <button type="button" onclick="toggleSingleChip(this, 'dz-duration')" class="chip bg-white border border-blue-200 px-4 py-2 rounded-lg text-sm">持續不退</button>
+                    <button type="button" onclick="toggleSingleChip(this, 'dz-duration')" class="chip bg-white border border-blue-200 px-4 py-2 rounded-lg text-sm">短暫反覆</button>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-blue-800 mb-3">3. 頭暈的感覺較接近：</span>
+            <div class="grid grid-cols-1 gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'dz-type')" class="chip bg-white border border-blue-100 px-4 py-2 rounded-lg text-sm text-left">🌀 天旋地轉 (眩暈)</button>
+                <button type="button" onclick="toggleSingleChip(this, 'dz-type')" class="chip bg-white border border-blue-100 px-4 py-2 rounded-lg text-sm text-left">☁️ 頭昏不穩、快要昏倒</button>
+                <button type="button" onclick="toggleSingleChip(this, 'dz-type')" class="chip bg-white border border-blue-100 px-4 py-2 rounded-lg text-sm text-left">🚶 走路不穩、失去平衡</button>
+            </div>
+        </div>
+
+        <div class="space-y-3">
+            <label class="flex items-center justify-between p-4 bg-white rounded-xl cursor-pointer border border-blue-50">
+                <span class="text-slate-700 text-sm font-medium">是否與姿勢改變有關？(躺下/翻身/起床)</span>
+                <input type="checkbox" class="w-5 h-5 accent-blue-500">
+            </label>
+            <label class="flex items-center justify-between p-4 bg-white rounded-xl cursor-pointer border border-blue-50">
+                <span class="text-slate-700 text-sm font-medium">伴隨耳鳴、聽力下降、耳脹？</span>
+                <input type="checkbox" class="w-5 h-5 accent-blue-500">
+            </label>
+        </div>
+
+        <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
+            <span class="block text-xs font-bold text-red-600 mb-3 italic">🚨 警示症狀 (若有請務必勾選)</span>
+            <div class="grid grid-cols-1 gap-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-2 rounded-lg text-xs text-red-700 font-bold">肢體無力或麻木 / 說話不清</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-2 rounded-lg text-xs text-red-700 font-bold">視力模糊 / 噁心嘔吐</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-3 py-2 rounded-lg text-xs text-red-700 font-bold">心悸 / 胸悶</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block-breath" class="hidden bg-teal-50 border border-teal-100 rounded-[20px] p-8 animate-in fade-in duration-500">
+    <h4 class="text-teal-700 font-bold mb-4 flex items-center">
+        <span class="w-2 h-2 bg-teal-500 rounded-full mr-2"></span> 
+        呼吸困難專屬評估 (Shortness of Breath)
+    </h4>
+    
+    <div class="space-y-6">
+        <div>
+            <span class="block text-sm font-bold text-teal-800 mb-3">1. 目前說話與喘的狀態 (必選)：</span>
+            <div class="grid grid-cols-1 gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'br-status')" class="chip bg-white border border-teal-200 px-4 py-3 rounded-xl text-sm text-left">✅ 能完整說話，只有輕微喘</button>
+                <button type="button" onclick="toggleSingleChip(this, 'br-status')" class="chip bg-yellow-50 border border-yellow-200 px-4 py-3 rounded-xl text-sm text-left font-bold text-yellow-700">⚠️ 說話需停頓換氣 (斷續)</button>
+                <button type="button" onclick="toggleSingleChip(this, 'br-status')" class="chip bg-orange-50 border border-orange-200 px-4 py-3 rounded-xl text-sm text-left font-bold text-orange-700">🚨 只能說單字或點頭</button>
+                <button type="button" onclick="toggleSingleChip(this, 'br-status')" class="chip bg-red-100 border border-red-200 px-4 py-3 rounded-xl text-sm text-left font-bold text-red-700">🆘 幾乎無法說話 / 非常喘</button>
+            </div>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-teal-800 mb-3">2. 症狀持續時間：</span>
+            <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'br-time')" class="chip bg-white border border-teal-100 px-4 py-2 rounded-lg text-xs">突然發作 (分~時)</button>
+                <button type="button" onclick="toggleSingleChip(this, 'br-time')" class="chip bg-white border border-teal-100 px-4 py-2 rounded-lg text-xs">1-3 天逐漸加重</button>
+                <button type="button" onclick="toggleSingleChip(this, 'br-time')" class="chip bg-white border border-teal-100 px-4 py-2 rounded-lg text-xs">超過 1 週慢性喘</button>
+            </div>
+        </div>
+
+        <div>
+            <span class="block text-sm font-bold text-teal-800 mb-3">3. 伴隨症狀 (複選)：</span>
+            <div class="flex flex-wrap gap-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-teal-100 px-3 py-1.5 rounded-lg text-xs italic">胸痛</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-teal-100 px-3 py-1.5 rounded-lg text-xs italic">咳血</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-teal-100 px-3 py-1.5 rounded-lg text-xs italic">下肢水腫</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-teal-100 px-3 py-1.5 rounded-lg text-xs italic">頭暈/快昏倒</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-teal-100 px-3 py-1.5 rounded-lg text-xs italic">發燒</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-teal-100 px-3 py-1.5 rounded-lg text-xs italic">明顯焦慮/手腳麻</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="block-fever" class="hidden bg-yellow-50 border border-yellow-200 rounded-[20px] p-8 animate-in fade-in duration-500">
+    <h4 class="text-yellow-700 font-bold mb-4 flex items-center">
+        <span class="w-2 h-2 bg-yellow-500 rounded-full mr-2"></span> 
+        發燒專屬評估 (Fever Evaluation)
+    </h4>
+    
+    <div class="space-y-6">
+        <div>
+            <span class="block text-sm font-bold text-yellow-800 mb-3">1. 體溫與當前狀態 (必選)：</span>
+            <div class="grid grid-cols-1 gap-2">
+                <button type="button" onclick="toggleSingleChip(this, 'fv-temp')" class="chip bg-white border border-yellow-200 px-4 py-2 rounded-lg text-sm text-left">🤒 有發燒感 (未量或 < 38°C)</button>
+                <button type="button" onclick="toggleSingleChip(this, 'fv-temp')" class="chip bg-white border border-yellow-200 px-4 py-2 rounded-lg text-sm text-left">🔥 38.0 – 38.9°C</button>
+                <button type="button" onclick="toggleSingleChip(this, 'fv-temp')" class="chip bg-yellow-100 border border-yellow-300 px-4 py-2 rounded-lg text-sm text-left font-bold">🌡️ ≥ 39.0°C</button>
+                <button type="button" onclick="toggleSingleChip(this, 'fv-temp')" class="chip bg-orange-100 border border-orange-300 px-4 py-2 rounded-lg text-sm text-left font-bold text-orange-700">🥶 伴隨嚴重畏寒顫抖</button>
+                <button type="button" onclick="toggleSingleChip(this, 'fv-temp')" class="chip bg-red-100 border border-red-300 px-4 py-2 rounded-lg text-sm text-left font-bold text-red-700">🆘 意識改變 / 極度虛弱</button>
+            </div>
+        </div>
+
+        <div class="bg-red-50 p-4 rounded-2xl border border-red-100">
+            <span class="block text-xs font-bold text-red-600 mb-3">🚨 紅旗警示 (若有請勾選)</span>
+            <div class="grid grid-cols-2 gap-2">
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-2 py-2 rounded-lg text-[10px] text-red-700 font-bold">意識不清/嗜睡</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-2 py-2 rounded-lg text-[10px] text-red-700 font-bold">頸部僵硬</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-2 py-2 rounded-lg text-[10px] text-red-700 font-bold">呼吸困難</button>
+                <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-red-100 px-2 py-2 rounded-lg text-[10px] text-red-700 font-bold">持續嘔吐/頭暈</button>
+            </div>
+        </div>
+
+        <div class="space-y-4">
+            <div>
+                <span class="block text-[10px] font-bold text-slate-400 uppercase">常見感染線索：</span>
+                <div class="flex flex-wrap gap-2 mt-2">
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-yellow-100 px-3 py-1.5 rounded-lg text-xs">咳嗽/喉嚨痛</button>
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-yellow-100 px-3 py-1.5 rounded-lg text-xs">腹痛/腹瀉</button>
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-yellow-100 px-3 py-1.5 rounded-lg text-xs">解尿疼痛/頻尿</button>
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-yellow-100 px-3 py-1.5 rounded-lg text-xs">皮疹/局部紅腫</button>
+                </div>
+            </div>
+            
+            <div class="p-4 bg-slate-100 rounded-xl">
+                <span class="block text-[10px] font-bold text-slate-500 mb-2">生命徵象異常 (若已知)：</span>
+                <div class="flex flex-wrap gap-2">
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-[10px]">心跳 > 130</button>
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-[10px]">血壓 < 90</button>
+                    <button type="button" onclick="toggleChip(this)" class="chip bg-white border border-slate-200 px-3 py-1.5 rounded-lg text-[10px]">呼吸 > 30</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="flex justify-between items-center mt-12">
+        <button type="button" onclick="backToStep1()" class="text-slate-400 font-bold px-6 py-3">返回</button>
+        <button type="button" onclick="goToStep3()" class="bg-blue-600 text-white px-12 py-3 rounded-xl font-bold shadow-lg shadow-blue-200 flex items-center hover:bg-blue-700 transition">
+            下一步 <i class="fas fa-arrow-right ml-2"></i>
+        </button>
+    </div>
+</div>
+
+    <footer class="mt-8 pb-10">
+        <p class="text-center text-slate-400 text-xs">© 2025 智慧急診 AI 分流系統 · 僅供臨床決策輔助使用</p>
+    </footer>
+
+<div id="symptomStep3" class="hidden max-w-2xl mx-auto space-y-6">
+    <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-slate-800">既往病史</h2>
+            <p class="text-slate-500 mt-2">請告訴我們您過去的健康狀況</p>
+        </div>
+
+        <div class="space-y-4">
+            <label class="flex items-center text-slate-700 font-medium">
+                <span class="text-red-500 mr-2 text-xl">♥</span> 是否有以下慢性疾病？（可複選）
+            </label>
+            
+            <div id="chronicDiseasesArea" class="grid grid-cols-2 sm:grid-cols-4 gap-3">
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">高血壓</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">糖尿病</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">心臟病</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">氣喘</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">腎臟病</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">肝臟病</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">癌症</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-4 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">中風</button>
+            </div>
+            
+            <input type="text" id="otherChronic" placeholder="其他慢性疾病..." class="w-full mt-2 p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-sm">
+        </div>
+
+        <hr class="my-8 border-slate-100">
+
+        <div class="space-y-4">
+            <label class="flex items-center text-slate-700 font-medium">
+                <span class="text-blue-500 mr-2 text-xl">💉</span> 過去重大疾病或手術史
+            </label>
+            <textarea 
+                id="pastHistory"
+                placeholder="例如：2020 年因盲腸炎手術、曾有心肌梗塞病史..." 
+                rows="4" 
+                class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none text-sm"
+            ></textarea>
+            <p class="text-xs text-slate-400 italic">若無，可略過此欄位</p>
+        </div>
+
+        <div class="flex gap-4 mt-10">
+            <button type="button" onclick="backToStep2()" class="flex-1 py-4 px-6 rounded-2xl border border-slate-200 text-slate-600 font-medium hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+                ← 返回
+            </button>
+            <button type="button" onclick="goToStep4()" class="flex-[2] py-4 px-6 rounded-2xl bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">
+                下一步
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="symptomStep4" class="hidden max-w-2xl mx-auto space-y-6">
+    <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-8">
+        <div class="mb-8">
+            <h2 class="text-2xl font-bold text-slate-800">用藥與過敏史</h2>
+            <p class="text-slate-500 mt-2">請提供您的用藥資訊與過敏史，以確保用藥安全</p>
+        </div>
+
+        <div class="space-y-4">
+            <label class="flex items-center text-slate-700 font-medium">
+                <span class="text-blue-500 mr-2 text-xl">🔗</span> 目前長期服用的藥物
+            </label>
+            <textarea 
+                id="medicationInfo"
+                placeholder="例如：降血壓藥（脈優錠）、降血糖藥（庫魯化錠）、抗凝血劑（阿斯匹靈）..." 
+                rows="4" 
+                class="w-full p-4 bg-slate-50 border border-slate-200 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none text-sm"
+            ></textarea>
+            <p class="text-xs text-slate-400 italic">若無，可略過此欄位</p>
+        </div>
+
+        <hr class="my-8 border-slate-100">
+
+        <div class="space-y-4">
+            <label class="flex items-center text-slate-700 font-medium">
+                <span class="text-yellow-500 mr-2 text-xl">⚠️</span> 藥物或食物過敏史（可複選）
+            </label>
+            
+            <div class="bg-amber-50 border border-amber-100 rounded-xl p-4 flex gap-3 items-start mb-4">
+                <span class="text-amber-500 text-lg">⚠️</span>
+                <p class="text-xs text-amber-700 leading-relaxed">
+                    過敏史對於您的診用藥安全非常重要，請務必詳細填寫。
+                </p>
+            </div>
+
+            <div id="allergyChipsArea" class="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">盤尼西林</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">阿斯匹靈</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">消炎止痛藥</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">磺胺類藥物</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">含碘顯影劑</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">海鮮</button>
+                <button type="button" onclick="toggleChip(this)" class="chip py-3 px-2 rounded-xl border border-slate-200 text-slate-600 hover:border-blue-500 transition-all text-sm">無過敏</button>
+            </div>
+            
+            <input type="text" id="allergyInfo" placeholder="其他過敏（藥物或食物）..." class="w-full mt-2 p-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-blue-500 outline-none text-sm">
+        </div>
+
+        <div class="flex gap-4 mt-10">
+            <button type="button" onclick="backToStep3()" class="flex-1 py-4 px-6 rounded-2xl border border-slate-200 text-slate-600 font-medium hover:bg-slate-50 transition-all flex items-center justify-center gap-2">
+                ← 返回
+            </button>
+            <button type="button" id="finalSubmitBtn" onclick="submitAllData()" class="flex-[2] py-4 px-6 rounded-2xl bg-blue-600 text-white font-semibold hover:bg-blue-700 shadow-lg shadow-blue-200 transition-all">
+                確認完成並送出
+            </button>
+        </div>
+    </div>
+</div>
+
+<div id="symptomStep5" class="hidden max-w-4xl mx-auto space-y-6 mb-20">
+    <div class="bg-amber-50 border border-amber-200 rounded-2xl p-4 flex gap-3">
+        <span class="text-amber-500">⚠️</span>
+        <div>
+            <h4 class="text-sm font-bold text-amber-800">醫療免責聲明</h4>
+            <p class="text-xs text-amber-700 leading-relaxed">以下結果由 AI 系統根據您提供的資訊產生，僅供臨床決策輔助參考，不能作為最終診斷依據...</p>
+        </div>
     </div>
 
-    <footer class="mt-8 pb-10 text-center text-slate-400 text-xs">
-        © 2025 智慧急診 AI 分流系統 · 僅供臨床決策輔助使用
-    </footer>
+    <div class="bg-white rounded-3xl shadow-sm border border-slate-100 overflow-hidden">
+        <div class="bg-blue-600 p-6 text-white flex items-center gap-3">
+            <i class="fas fa-sparkles"></i>
+            <h3 class="text-xl font-bold">AI 分流分析結果</h3>
+        </div>
+        
+        <div class="p-8 grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-50 rounded-2xl p-6 text-center border border-slate-100">
+                <span class="text-xs font-bold text-slate-400 uppercase">ESI 緊急分級</span>
+                <div id="esiLevel" class="text-5xl font-black my-2 text-yellow-500">3</div>
+                <span id="esiStatus" class="text-sm font-bold text-slate-600">急迫</span>
+            </div>
+            
+            <div class="md:col-span-2 space-y-4">
+                <div class="flex items-center justify-between p-4 bg-blue-50 rounded-xl">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-clock text-blue-500"></i>
+                        <span class="font-medium text-slate-700">預估等待時間</span>
+                    </div>
+                    <span id="waitTime" class="font-bold text-blue-600">約 20-40 分鐘</span>
+                </div>
+                <div class="flex items-center justify-between p-4 bg-purple-50 rounded-xl">
+                    <div class="flex items-center gap-3">
+                        <i class="fas fa-stethoscopes text-purple-500"></i>
+                        <span class="font-medium text-slate-700">建議分科</span>
+                    </div>
+                    <span id="suggestedDept" class="font-bold text-purple-600">急診外科 / 腸胃科</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bg-white rounded-3xl shadow-sm border border-slate-100 p-8">
+        <h3 class="text-lg font-bold text-slate-800 mb-6 flex items-center gap-2">
+            <i class="fas fa-brain text-blue-500"></i> 可能的鑑別診斷 (Differential Diagnosis)
+        </h3>
+        <div id="diagnosisList" class="space-y-4">
+            </div>
+    </div>
+
+    <div class="bg-cyan-50 border border-cyan-100 rounded-3xl p-8">
+        <h3 class="text-lg font-bold text-cyan-800 mb-6 flex items-center gap-2">
+            <i class="fas fa-clipboard-list"></i> 建議檢查與處置
+        </h3>
+        <ul id="treatmentList" class="space-y-3 text-cyan-700 text-sm">
+            </ul>
+    </div>
+    
+    <button onclick="location.reload()" class="w-full py-4 bg-slate-800 text-white rounded-2xl font-bold">返回首頁</button>
+</div>
+
+
 
     <script src="app.js"></script>
 </body>

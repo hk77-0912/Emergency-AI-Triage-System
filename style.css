@@ -1,45 +1,45 @@
-/* style.css */
 body { 
-    background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); 
-    min-height: 100vh; 
-    font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
-}
+        background: linear-gradient(135deg, #f0f7ff 0%, #ffffff 100%); 
+        min-height: 100vh; 
+        font-family: "PingFang TC", "Microsoft JhengHei", sans-serif;
+    }
+    .main-card { border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); }
+    .segmented-btn.active { background-color: #3b82f6; color: white; border-color: #3b82f6; }
+    
+    /* 症狀按鈕選取效果 */
+    .symptom-card { transition: all 0.3s ease; border: 2px solid transparent; }
+    .symptom-card.selected { border-color: #3b82f6; background-color: #eff6ff; }
 
-.main-card { 
-    background: white;
-    border-radius: 20px; 
-    box-shadow: 0 10px 25px rgba(0,0,0,0.05); 
-}
+    /* Chip 選取效果 */
+    .chip { transition: all 0.2s; cursor: pointer; }
+    .chip.active { background-color: #3b82f6; color: white; border-color: #3b82f6; }
 
-.symptom-card { 
-    transition: all 0.3s ease; 
-    border-color: #f1f5f9;
-}
+    /* 漸層滑桿樣式 */
+    .severity-slider {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 100%;
+        height: 12px;
+        border-radius: 6px;
+        background: linear-gradient(to right, #22c55e 0%, #eab308 50%, #ef4444 100%);
+        outline: none;
+    }
+    .severity-slider::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        background: #fff;
+        border: 3px solid #334155;
+        cursor: pointer;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
 
-.symptom-card.selected { 
-    border-color: #3b82f6; 
-    background-color: #eff6ff; 
-}
+    /* 平滑收摺動畫 */
+    .collapse-transition { transition: all 0.5s ease-in-out; max-height: 2000px; overflow: hidden; opacity: 1; }
+    .collapse-transition.collapsed { max-height: 0; opacity: 0; margin: 0; padding: 0; }
 
-.chip.active { 
-    background-color: #3b82f6; 
-    color: white; 
-    border-color: #3b82f6; 
-}
-
-.step-circle { 
-    width: 32px; height: 32px; 
-    display: flex; align-items: center; justify-content: center; 
-    border-radius: 50%; font-weight: bold; font-size: 14px; 
-    transition: 0.3s; 
-}
-
-.step-done { background-color: #22c55e !important; color: white !important; }
-.step-active { background-color: #1e40af !important; color: white !important; box-shadow: 0 0 0 4px #dbeafe; }
-
-.severity-slider {
-    -webkit-appearance: none;
-    width: 100%; height: 12px;
-    border-radius: 6px;
-    background: linear-gradient(to right, #22c55e 0%, #eab308 50%, #ef4444 100%);
-}
+    .step-circle { width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: bold; font-size: 14px; transition: 0.3s; }
+    .step-done { background-color: #22c55e !important; color: white !important; }
+    .step-active { background-color: #1e40af !important; color: white !important; box-shadow: 0 0 0 4px #dbeafe; }
